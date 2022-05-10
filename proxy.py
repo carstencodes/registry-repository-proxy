@@ -47,7 +47,7 @@ class CatalogResource:
             else:
                 return result
         
-        if 0 > number or number >= len(result) or not begin in result:
+        if 0 > number or not begin in result:
             return []
         
         index = result.index(begin)
